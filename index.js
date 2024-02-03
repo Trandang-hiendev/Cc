@@ -127,7 +127,7 @@ function updateRichPresence() {
   client.user.setActivity(r);
 }
 
-client.login("ODA5MDc3MTIyMDcyODM4MTc2.GNBjem.VbA8q_mWUNXnqKhx0hvrMnQV_F1bZ57Fn57Dqg");
+client.login("your token account");
 
 // Editable RPC concept by GhoSty || Brutality
 // Editable RPC concept by GhoSty || Brutality
