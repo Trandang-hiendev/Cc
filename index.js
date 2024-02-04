@@ -17,7 +17,7 @@ let rpcName = '想你';
 let rpcDetails = 'yeu em trong mo';
 let assetsSmallText = '[SSH: KayT]';
 let assetsLargeText = '.';
-let assetsLargeImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203717757640900658/tai_xuong_1.gif?ex=65d21c85&is=65bfa785&hm=2deb1d46b379b94edd81f7572fbfdb2b098f00d68d10cb8760a96701d8a56fc3&';
+let assetsLargeImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203720324349169735/anime-sad-gif-3.gif?ex=65d21ee9&is=65bfa9e9&hm=fb2e582d07254a4925edd56f84c8433e3923488ddad9a952552df460f9a39485&';
 let assetsSmallImage = 'https://cdn.discordapp.com/emojis/1162207615921696858.gif?quality=lossless&size=48';
 
 client.on('ready', async () => {
