@@ -9,6 +9,9 @@ keepAlive();
 
 let r;
 let startTimestamp = Date.now();
+let buttonName = 'FACEBOOK';
+let buttonUrl = 'https://www.facebook.com/hine.Wns/';
+let rpcURL = 'https://www.facebook.com/hine.Wns/';
 let rpcType = 'PLAYING'; // COMPETING, WATCHING, PLAYING, STREAMING
 let rpcName = 'Visual Studio Code';
 let rpcDetails = '📝 | gay.js';
