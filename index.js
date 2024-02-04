@@ -13,12 +13,12 @@ let buttonName = 'FACEBOOK';
 let buttonUrl = 'https://www.facebook.com/hine.Wns/';
 let rpcURL = 'https://www.facebook.com/hine.Wns/';
 let rpcType = 'PLAYING'; // COMPETING, WATCHING, PLAYING, STREAMING
-let rpcName = 'Visual Studio Code';
+let rpcName = '';
 let rpcDetails = '📝 | gay.js';
 let assetsSmallText = '📂 | bot [SSH: KayT]';
 let assetsLargeText = '.';
-let assetsLargeImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203556988957626418/T5VGWUI.jpeg?ex=65d186cb&is=65bf11cb&hm=56d6d8060c1e05e4dee754bf59cab59f8522144a63e195a3cbccbd0c8db039ef&';
-let assetsSmallImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203556988756426792/Screenshot_2024-02-04-11-24-01-82_680d03679600f7af0b4c700c6b270fe7.jpg?ex=65d186cb&is=65bf11cb&hm=61d83900478b72daf618795086313c5a5975e932173e66d153293e83bf61c761&';
+let assetsLargeImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203717757640900658/tai_xuong_1.gif?ex=65d21c85&is=65bfa785&hm=2deb1d46b379b94edd81f7572fbfdb2b098f00d68d10cb8760a96701d8a56fc3&';
+let assetsSmallImage = 'https://cdn.discordapp.com/emojis/1162207615921696858.gif?quality=lossless&size=48';
 
 client.on('ready', async () => {
   console.clear();
