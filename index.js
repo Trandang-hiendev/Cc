@@ -9,16 +9,13 @@ keepAlive();
 
 let r;
 let startTimestamp = Date.now();
-let buttonName = 'FACEBOOK';
-let buttonUrl = 'https://www.facebook.com/hine.Wns/';
-let rpcURL = 'https://www.facebook.com/hine.Wns/';
 let rpcType = 'PLAYING'; // COMPETING, WATCHING, PLAYING, STREAMING
-let rpcName = 'Suy 24/7';
-let rpcDetails = 'nho em vai lon';
-let assetsSmallText = 'nho em lam';
-let assetsLargeText = 'Click the button to contact me';
-let assetsLargeImage = 'https://media.discordapp.net/attachments/1176128600894885959/1203288749061054524/anime-sad-gif-11.gif?ex=65d08cf9&is=65be17f9&hm=3bf6db4121ffe2ddf6182629cbb9766f8f2d6fd5b132ffcac890906a266b6a7a&';
-let assetsSmallImage = 'https://cdn.discordapp.com/emojis/1162207638319284227.gif?quality=lossless&size=48';
+let rpcName = 'Visual Studio Code';
+let rpcDetails = '📝 | gay.js';
+let assetsSmallText = '📂 | bot [SSH: KayT]';
+let assetsLargeText = '.';
+let assetsLargeImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203556988957626418/T5VGWUI.jpeg?ex=65d186cb&is=65bf11cb&hm=56d6d8060c1e05e4dee754bf59cab59f8522144a63e195a3cbccbd0c8db039ef&';
+let assetsSmallImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203556988756426792/Screenshot_2024-02-04-11-24-01-82_680d03679600f7af0b4c700c6b270fe7.jpg?ex=65d186cb&is=65bf11cb&hm=61d83900478b72daf618795086313c5a5975e932173e66d153293e83bf61c761&';
 
 client.on('ready', async () => {
   console.clear();
