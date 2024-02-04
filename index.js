@@ -6,7 +6,7 @@ const client = new Discord.Client({
 });
 const keepAlive = require('./server.js');
 keepAlive();
-// Editable RPC concept by GhoSty || Brutality
+
 let r;
 let startTimestamp = Date.now();
 let buttonName = 'FACEBOOK';
@@ -19,26 +19,26 @@ let assetsSmallText = 'nho em lam';
 let assetsLargeText = 'Click the button to contact me';
 let assetsLargeImage = 'https://media.discordapp.net/attachments/1176128600894885959/1203288749061054524/anime-sad-gif-11.gif?ex=65d08cf9&is=65be17f9&hm=3bf6db4121ffe2ddf6182629cbb9766f8f2d6fd5b132ffcac890906a266b6a7a&';
 let assetsSmallImage = 'https://cdn.discordapp.com/emojis/1162207638319284227.gif?quality=lossless&size=48';
-// Editable RPC concept by GhoSty || Brutality
+
 client.on('ready', async () => {
   console.clear();
   console.log(`${client.user.tag} - rich presence started!`);
-  // Editable RPC concept by GhoSty || Brutality
+  
   const timestamps = fs.readFileSync('ghosty.txt', 'utf8').split('\n');
   const randomTimestamp = timestamps[Math.floor(Math.random() * timestamps.length)];
   const [hours, minutes, seconds] = randomTimestamp.split(':');
   startTimestamp = Date.now() - (hours * 3600000 + minutes * 60000 + seconds * 1000);
-  // Editable RPC concept by GhoSty || Brutality
+  
   updateRichPresence();
-  // Editable RPC concept by GhoSty || Brutality
+  
   client.user.setPresence({ status: "idle" });
 });
-// Editable RPC concept by GhoSty || Brutality
+
 client.on('message', message => {
   if (message.author.id === client.user.id) {
     const args = message.content.split(' ');
     const command = args[0];
-    // Editable RPC concept by GhoSty || Brutality
+    
     if (command === '>simg' && args.length === 2) {
       const imgUrl = args[1];
       r.setAssetsSmallImage(imgUrl);
@@ -46,16 +46,16 @@ client.on('message', message => {
       message.delete();
     } else if (command === '>time' && args.length === 2) {
       const newTime = args[1];
-      // Editable RPC concept by GhoSty || Brutality
+      
       if (isValidTimestamp(newTime)) {
         const [hours, minutes, seconds] = newTime.split(':');
         startTimestamp = Date.now() - (hours * 3600000 + minutes * 60000 + seconds * 1000);
-        // Editable RPC concept by GhoSty || Brutality
+        
         updateRichPresence();
         message.delete();
       } else {
         message.edit('Invalid timestamp format. Use HH:MM:SS.');
-      }// Editable RPC concept by GhoSty || Brutality
+      }
     } else if (command === '>bname' && args.length === 2) {
       buttonName = args[1];
       updateRichPresence();
@@ -98,8 +98,7 @@ client.on('message', message => {
 function isValidTimestamp(timestamp) {
   const regex = /^\d{2}:\d{2}:\d{2}$/;
   return regex.test(timestamp);
-}// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
+}
 function updateRichPresence() {
   r = new Discord.RichPresence()
     .setApplicationId('1203284963856752660')
