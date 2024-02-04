@@ -1,28 +1,23 @@
-// Hi Skidders!
-// Welcome to Editable RPC!!!
-// Written with ðŸ§  by GhoSty
-// Feel free to edit this RPC! But Give Credits
 const Discord = require('discord.js-selfbot-v13');
 const fs = require('fs');
 const client = new Discord.Client({
   readyStatus: false,
   checkUpdate: false
 });
-// Editable RPC concept by GhoSty || Brutality
 const keepAlive = require('./server.js');
 keepAlive();
 // Editable RPC concept by GhoSty || Brutality
 let r;
 let startTimestamp = Date.now();
-let buttonName = 'Contact :3';
+let buttonName = 'FACEBOOK';
 let buttonUrl = 'https://www.facebook.com/hine.Wns/';
 let rpcURL = 'https://www.facebook.com/hine.Wns/';
 let rpcType = 'PLAYING'; // COMPETING, WATCHING, PLAYING, STREAMING
-let rpcName = 'adu vjp';
-let rpcDetails = 'hi';
-let assetsSmallText = 'tao la trum';
+let rpcName = 'Suy 24/7';
+let rpcDetails = 'nho em vai lon';
+let assetsSmallText = 'nho em lam';
 let assetsLargeText = 'Click the button to contact me';
-let assetsLargeImage = 'https://media.discordapp.net/attachments/1202612834685689927/1203241810047139850/tai_xuong.gif?ex=65d06142&is=65bdec42&hm=6666718f8559be8063ccf7fe9ad2010284f6c20df32634e3b64e4a581745f095&';
+let assetsLargeImage = 'https://media.discordapp.net/attachments/1176128600894885959/1203288749061054524/anime-sad-gif-11.gif?ex=65d08cf9&is=65be17f9&hm=3bf6db4121ffe2ddf6182629cbb9766f8f2d6fd5b132ffcac890906a266b6a7a&';
 let assetsSmallImage = 'https://cdn.discordapp.com/emojis/1162207638319284227.gif?quality=lossless&size=48';
 // Editable RPC concept by GhoSty || Brutality
 client.on('ready', async () => {
@@ -98,11 +93,8 @@ client.on('message', message => {
       updateRichPresence();
       message.delete();
     }
-    
-    // Editable RPC concept by GhoSty || Brutality
   }
 });
-// Editable RPC concept by GhoSty || Brutality
 function isValidTimestamp(timestamp) {
   const regex = /^\d{2}:\d{2}:\d{2}$/;
   return regex.test(timestamp);
@@ -110,7 +102,7 @@ function isValidTimestamp(timestamp) {
 // Editable RPC concept by GhoSty || Brutality
 function updateRichPresence() {
   r = new Discord.RichPresence()
-    .setApplicationId('1113183256343482519')
+    .setApplicationId('1203284963856752660')
     .setType(rpcType)
     .setURL(rpcURL)
     .setName(rpcName)
@@ -122,19 +114,8 @@ function updateRichPresence() {
     .setAssetsSmallText(assetsSmallText)
     .setButtons([
       { name: buttonName, url: buttonUrl }
-    ]);// Editable RPC concept by GhoSty || Brutality
-  // Editable RPC concept by GhoSty || Brutality
+    ]);
   client.user.setActivity(r);
 }
 
-client.login("your token account");
-
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
-// Editable RPC concept by GhoSty || Brutality
+client.login(process.env.TOKEN);
